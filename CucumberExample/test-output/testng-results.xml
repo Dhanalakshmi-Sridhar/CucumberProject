@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[expected [Smartbazaar – World of Asian Foods] but found [Smartbazaar - World of Asian Foods]]]>
+    </line>
+    <line>
+      <![CDATA[Fail]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-03-04T00:14:58 GMT" name="Default Suite" finished-at="2023-03-04T00:15:45 GMT" duration-ms="47489">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner1@ba54932]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-04T00:14:58 GMT" name="CucumberExample" finished-at="2023-03-04T00:15:45 GMT" duration-ms="47489">
+      <class name="TestRunner.TestRunner1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunner1@ba54932]" started-at="2023-03-04T00:14:58 GMT" name="setUpClass" finished-at="2023-03-04T00:14:59 GMT" duration-ms="1160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9a20cbd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner1@ba54932]" started-at="2023-03-04T00:14:59 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T00:15:10 GMT" duration-ms="10469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User checks the whether the application opens in browser or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verifying the Title"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[expected [Smartbazaar – World of Asian Foods] but found [Smartbazaar - World of Asian Foods]]]>
+            </line>
+            <line>
+              <![CDATA[Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner1@ba54932]" started-at="2023-03-04T00:15:10 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T00:15:26 GMT" duration-ms="16717" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to search the products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To check the Functionality of the screen"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="https://www.smartbazaar.co.uk/product/asali-kala-jeera-rice-1kg/">...</a> is not clickable at point (100, 512). Other element would receive the click: <div id="cookie-law-info-bar" data-nosnippet="true" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: inherit; bottom: 0px; position: fixed; display: block;">...</div>
+  (Session info: chrome=110.0.5481.177)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f028ebc547de04f76440d09f120466a, clickElement {id=f11f3f75-a2e9-4237-a775-c92ffc800845}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\kanag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61134/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (1f028ebc547de04f76440d09f120466a)] -> xpath: //ul[@class='products columns-5']]] -> xpath: .//li/div/div/div[3]/div/h4/a]
+Session ID: 1f028ebc547de04f76440d09f120466a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://www.smartbazaar.co.uk/product/asali-kala-jeera-rice-1kg/">...</a> is not clickable at point (100, 512). Other element would receive the click: <div id="cookie-law-info-bar" data-nosnippet="true" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: inherit; bottom: 0px; position: fixed; display: block;">...</div>
+  (Session info: chrome=110.0.5481.177)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f028ebc547de04f76440d09f120466a, clickElement {id=f11f3f75-a2e9-4237-a775-c92ffc800845}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\kanag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61134/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (1f028ebc547de04f76440d09f120466a)] -> xpath: //ul[@class='products columns-5']]] -> xpath: .//li/div/div/div[3]/div/h4/a]
+Session ID: 1f028ebc547de04f76440d09f120466a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at org.example.Pages.Page2.productSelection(Page2.java:31)
+at StepDefinition.Test2.user_selects_the_from_the_list(Test2.java:40)
+at ✽.User selects the 'ASALI KALA JEERA RICE (1KG)' from the list(file:///C:/Users/kanag/IdeaProjects/CucumberExample/src/test/resources/Feature/Test2.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner1@ba54932]" started-at="2023-03-04T00:15:26 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T00:15:45 GMT" duration-ms="19017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to search the products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To check the Functionality of the screen"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner1@ba54932]" started-at="2023-03-04T00:15:45 GMT" name="tearDownClass" finished-at="2023-03-04T00:15:45 GMT" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.TestRunner1 -->
+    </test> <!-- CucumberExample -->
+  </suite> <!-- Default Suite -->
+</testng-results>
